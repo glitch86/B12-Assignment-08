@@ -8,9 +8,7 @@ const Root = () => {
     return (
         <div className='flex flex-col min-h-screen'>
             <Navbar></Navbar>
-            <div className='flex-1 max-w-screen-xl w-full mx-auto p-4 md:p-8 lg:p-12'>
-                <Outlet></Outlet>
-            </div>
+            <Outlet></Outlet>
             <Footer></Footer>
         </div>
     );
