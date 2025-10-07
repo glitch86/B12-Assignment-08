@@ -1,0 +1,272 @@
+[
+  {
+    "image": "https://i.ibb.co.com/twTxB8sp/demo-app-1.webp",
+    "title": "SnapPic",
+    "companyName": "PixelForge Ltd",
+    "id": 1,
+    "description": "Capture, edit, and share your best moments instantly with AI-powered filters and tools.",
+    "size": 48,
+    "reviews": 12543,
+    "ratingAvg": 4.6,
+    "downloads": 1200000,
+    "ratings": [
+      { "name": "1 star", "count": 320 },
+      { "name": "2 star", "count": 560 },
+      { "name": "3 star", "count": 1240 },
+      { "name": "4 star", "count": 2450 },
+      { "name": "5 star", "count": 9973 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/8nTmgsLS/demo-app-2.webp",
+    "title": "TaskFlow",
+    "companyName": "Workly Studios",
+    "id": 2,
+    "description": "Stay productive with intuitive task boards, reminders, and progress tracking tools.",
+    "size": 32,
+    "reviews": 8540,
+    "ratingAvg": 4.2,
+    "downloads": 890000,
+    "ratings": [
+      { "name": "1 star", "count": 230 },
+      { "name": "2 star", "count": 640 },
+      { "name": "3 star", "count": 1450 },
+      { "name": "4 star", "count": 3300 },
+      { "name": "5 star", "count": 2920 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/d88SncM/demo-app-3.webp",
+    "title": "BeatHub",
+    "companyName": "SonicCloud",
+    "id": 3,
+    "description": "Stream your favorite music, create playlists, and discover trending artists daily.",
+    "size": 67,
+    "reviews": 30542,
+    "ratingAvg": 4.8,
+    "downloads": 3500000,
+    "ratings": [
+      { "name": "1 star", "count": 720 },
+      { "name": "2 star", "count": 1240 },
+      { "name": "3 star", "count": 2340 },
+      { "name": "4 star", "count": 6500 },
+      { "name": "5 star", "count": 19742 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/RkCfW3kk/demo-app-4.webp",
+    "title": "FitTrack",
+    "companyName": "BodySync Inc.",
+    "id": 4,
+    "description": "Track workouts, monitor sleep, and stay fit with personalized fitness goals.",
+    "size": 53,
+    "reviews": 18200,
+    "ratingAvg": 4.4,
+    "downloads": 1700000,
+    "ratings": [
+      { "name": "1 star", "count": 530 },
+      { "name": "2 star", "count": 920 },
+      { "name": "3 star", "count": 2410 },
+      { "name": "4 star", "count": 5100 },
+      { "name": "5 star", "count": 9240 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/nNdLYkst/demo-app-5.webp",
+    "title": "NoteEase",
+    "companyName": "SmartByte Labs",
+    "id": 5,
+    "description": "Take notes faster with handwriting recognition, sync, and voice-to-text features.",
+    "size": 25,
+    "reviews": 6423,
+    "ratingAvg": 4.1,
+    "downloads": 530000,
+    "ratings": [
+      { "name": "1 star", "count": 340 },
+      { "name": "2 star", "count": 710 },
+      { "name": "3 star", "count": 1230 },
+      { "name": "4 star", "count": 2310 },
+      { "name": "5 star", "count": 1833 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/8LMRQSvs/demo-app-6.webp",
+    "title": "TravelMate",
+    "companyName": "WanderWorld",
+    "id": 6,
+    "description": "Find destinations, plan itineraries, and track travel expenses easily.",
+    "size": 61,
+    "reviews": 17400,
+    "ratingAvg": 4.7,
+    "downloads": 2400000,
+    "ratings": [
+      { "name": "1 star", "count": 210 },
+      { "name": "2 star", "count": 520 },
+      { "name": "3 star", "count": 1380 },
+      { "name": "4 star", "count": 4800 },
+      { "name": "5 star", "count": 10490 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/5hkRkGJ9/icon-009.webp",
+    "title": "MindSpace",
+    "companyName": "CalmTech",
+    "id": 7,
+    "description": "Meditation, sleep, and relaxation sounds to reduce stress and anxiety.",
+    "size": 41,
+    "reviews": 9820,
+    "ratingAvg": 4.5,
+    "downloads": 1200000,
+    "ratings": [
+      { "name": "1 star", "count": 310 },
+      { "name": "2 star", "count": 630 },
+      { "name": "3 star", "count": 930 },
+      { "name": "4 star", "count": 2850 },
+      { "name": "5 star", "count": 5090 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/DDjpzFXy/icon-010.webp",
+    "title": "Shoply",
+    "companyName": "EcomEdge",
+    "id": 8,
+    "description": "Your one-stop shop for electronics, fashion, and daily essentials.",
+    "size": 79,
+    "reviews": 25830,
+    "ratingAvg": 4.3,
+    "downloads": 4500000,
+    "ratings": [
+      { "name": "1 star", "count": 830 },
+      { "name": "2 star", "count": 1420 },
+      { "name": "3 star", "count": 3210 },
+      { "name": "4 star", "count": 7100 },
+      { "name": "5 star", "count": 13270 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/ymBhdNVV/icon-014.webp",
+    "title": "Learnly",
+    "companyName": "EduNext",
+    "id": 9,
+    "description": "Online learning made easy with short, interactive lessons and quizzes.",
+    "size": 58,
+    "reviews": 19500,
+    "ratingAvg": 4.8,
+    "downloads": 3100000,
+    "ratings": [
+      { "name": "1 star", "count": 180 },
+      { "name": "2 star", "count": 420 },
+      { "name": "3 star", "count": 970 },
+      { "name": "4 star", "count": 4450 },
+      { "name": "5 star", "count": 13480 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/hRqf5z0J/icon-015.webp",
+    "title": "FinancePro",
+    "companyName": "LedgerLabs",
+    "id": 10,
+    "description": "Manage budgets, track expenses, and analyze your financial goals effortlessly.",
+    "size": 47,
+    "reviews": 13300,
+    "ratingAvg": 4.4,
+    "downloads": 1500000,
+    "ratings": [
+      { "name": "1 star", "count": 490 },
+      { "name": "2 star", "count": 720 },
+      { "name": "3 star", "count": 1630 },
+      { "name": "4 star", "count": 3400 },
+      { "name": "5 star", "count": 7060 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/CKvMtmtB/icon-019.webp",
+    "title": "Weatherly",
+    "companyName": "SkyWorks",
+    "id": 11,
+    "description": "Accurate forecasts with live radar maps and severe weather alerts.",
+    "size": 38,
+    "reviews": 6800,
+    "ratingAvg": 4.2,
+    "downloads": 760000,
+    "ratings": [
+      { "name": "1 star", "count": 290 },
+      { "name": "2 star", "count": 530 },
+      { "name": "3 star", "count": 930 },
+      { "name": "4 star", "count": 2150 },
+      { "name": "5 star", "count": 2900 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/vCWd7HqZ/icon-022.webp",
+    "title": "Cookio",
+    "companyName": "KitchenWiz",
+    "id": 12,
+    "description": "Discover recipes, manage grocery lists, and cook with guided steps.",
+    "size": 62,
+    "reviews": 10900,
+    "ratingAvg": 4.7,
+    "downloads": 1800000,
+    "ratings": [
+      { "name": "1 star", "count": 240 },
+      { "name": "2 star", "count": 510 },
+      { "name": "3 star", "count": 1190 },
+      { "name": "4 star", "count": 3920 },
+      { "name": "5 star", "count": 7040 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/tTTgVsWN/icon-028.webp",
+    "title": "PhotoBlend",
+    "companyName": "VisionarySoft",
+    "id": 13,
+    "description": "AI photo editor for removing backgrounds, color grading, and blending layers.",
+    "size": 75,
+    "reviews": 14120,
+    "ratingAvg": 4.5,
+    "downloads": 2300000,
+    "ratings": [
+      { "name": "1 star", "count": 340 },
+      { "name": "2 star", "count": 690 },
+      { "name": "3 star", "count": 1380 },
+      { "name": "4 star", "count": 4100 },
+      { "name": "5 star", "count": 7610 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/QFB2THTF/icon-035.webp",
+    "title": "GameVault",
+    "companyName": "NextPlay Studios",
+    "id": 14,
+    "description": "Access hundreds of indie and AAA games in one subscription-based library.",
+    "size": 120,
+    "reviews": 20900,
+    "ratingAvg": 4.6,
+    "downloads": 3800000,
+    "ratings": [
+      { "name": "1 star", "count": 620 },
+      { "name": "2 star", "count": 920 },
+      { "name": "3 star", "count": 2100 },
+      { "name": "4 star", "count": 5200 },
+      { "name": "5 star", "count": 12060 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/HWz9bj9/icon-033.webp",
+    "title": "HealthSync",
+    "companyName": "MediCore",
+    "id": 15,
+    "description": "Monitor vitals, manage medications, and sync data with your smart devices.",
+    "size": 59,
+    "reviews": 8700,
+    "ratingAvg": 4.3,
+    "downloads": 980000,
+    "ratings": [
+      { "name": "1 star", "count": 260 },
+      { "name": "2 star", "count": 550 },
+      { "name": "3 star", "count": 1280 },
+      { "name": "4 star", "count": 2990 },
+      { "name": "5 star", "count": 3620 }
+    ]
+  }
+]

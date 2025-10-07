@@ -6,7 +6,7 @@ import hero from "../../assets/hero.png";
 const Hero = () => {
   return (
     <div className="hero">
-      <div className="hero-content text-center flex flex-col justify-center">
+      <div className="hero-content pb-0 text-center flex flex-col justify-center">
         <div className="max-w-xl">
           <h1 className="text-7xl font-bold">
             We Build
