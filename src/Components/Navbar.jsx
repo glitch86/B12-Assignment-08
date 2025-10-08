@@ -8,13 +8,13 @@ const Navbar = () => {
   const links = (
     <>
       <li>
-        <NavLink to='/' className={({isActive}) => ` ${isActive ? 'border-b-2 border-blue-800' : ''}`}><FaHome></FaHome>  Home</NavLink>
+        <NavLink to='/' className={({isActive}) => ` ${isActive ? 'border-b-2 rounded-none border-blue-800' : ''}`}><FaHome></FaHome>  Home</NavLink>
       </li>
       <li>
-        <NavLink to='/apps' className={({isActive}) => ` ${isActive ? 'border-b-2 border-blue-800' : ''}`}><FaAppStore></FaAppStore> Apps</NavLink>
+        <NavLink to='/apps' className={({isActive}) => ` ${isActive ? 'border-b-2 rounded-none  border-blue-800' : ''}`}><FaAppStore></FaAppStore> Apps</NavLink>
       </li>
       <li>
-        <NavLink to='/installation' className={({isActive}) => ` ${isActive ? 'border-b-2 border-blue-800' : ''}`}><MdInstallDesktop></MdInstallDesktop> Installation</NavLink>
+        <NavLink to='/installation' className={({isActive}) => ` ${isActive ? 'border-b-2 rounded-none  border-blue-800' : ''}`}><MdInstallDesktop></MdInstallDesktop> Installation</NavLink>
       </li>
     </>
   );
@@ -65,7 +65,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn border-none bg-[linear-gradient(45deg,#632EE3,#9F62F2)] text-lg text-white font-normal"> <FaGithub></FaGithub> Contribute</a>
+          <a href="https://github.com/glitch86" target="_blank" className="btn border-none bg-[linear-gradient(45deg,#632EE3,#9F62F2)] text-lg text-white font-normal"> <FaGithub></FaGithub> Contribute</a>
         </div>
       </div>
     </div>

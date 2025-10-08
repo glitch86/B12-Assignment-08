@@ -3,11 +3,13 @@ import Root from "../Root/Root";
 import Home from "../Pages/Home";
 import Apps from "../Pages/Apps";
 import Install from "../Pages/Install";
+import ErrorPage from "../Pages/ErrorPage"
 
 export const router = createBrowserRouter([
   {
     path: "/",
     Component: Root,
+    errorElement:<ErrorPage></ErrorPage> ,
     children: [
       {
         index: true,
