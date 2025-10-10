@@ -15,8 +15,8 @@ const DetailsCard = ({
   handleClick
 }) => {
   return (
-    <div className="card card-side bg-base-100 shadow-sm">
-      <figure className="p-9">
+    <div className="card flex-col md:flex-row card-side bg-base-100 shadow-sm">
+      <figure className="p-9 size-[200px] md:h-fit mx-auto">
         <img className="rounded-lg" src={image} alt={title} />
       </figure>
 
@@ -27,10 +27,10 @@ const DetailsCard = ({
         </p>
         <div className="divider "></div>
         <div className="flex gap-7">
-          <div className="flex justify-center items-center gap-5">
+          <div className="flex justify-center items-center gap-3 md:gap-5">
             <div>
               <p className="text-gray-400">Downloads</p>
-              <h1 className="text-4xl font-bold">
+              <h1 className="text-sm md:text-4xl font-bold">
                 {downloads > 1000000
                   ? downloads / 1000000 + "M"
                   : downloads > 100000
@@ -38,34 +38,34 @@ const DetailsCard = ({
                   : ""}
               </h1>
             </div>
-            <figure className="size-8">
-              <img src={iconDownloads} alt="" />
+            <figure className="hidden md:block md:size-8">
+              <img className="hidden md:block" src={iconDownloads} alt="" />
             </figure>
           </div>
           <div className="flex justify-center items-center gap-5">
             <div>
               <p className="text-gray-400">Average Rating</p>
-              <h1 className="text-4xl font-bold">{ratingAvg}</h1>
+              <h1 className="text-sm md:text-4xl font-bold">{ratingAvg}</h1>
             </div>
-            <figure className="size-8">
-              <img src={iconRatings} alt="" />
+            <figure className="hidden md:block md:size-8">
+              <img className="hidden md:block" src={iconRatings} alt="" />
             </figure>
           </div>
           <div className="flex justify-center items-center gap-5">
             <div>
               <p className="text-gray-400">Total Reviews</p>
-              <h1 className="text-4xl font-bold">
+              <h1 className="text-sm md:text-4xl font-bold">
                 {reviews > 1000 ? reviews / 1000 + "K" : ""}
               </h1>
             </div>
-            <figure className="size-8">
-              <img src={iconReview} alt="" />
+            <figure className="hidden md:block md:size-8">
+              <img className="hidden md:block " src={iconReview} alt="" />
             </figure>
           </div>
         </div>
         <div className="card-actions justify-start">
           <button
-            className={`btn  bg-green-500 ${
+            className={`btn w-full md:w-fit  bg-green-500 ${
               disable ? "cursor-not-allowed text-gray-100" : "text-white"
             }`}
             onClick={handleClick}

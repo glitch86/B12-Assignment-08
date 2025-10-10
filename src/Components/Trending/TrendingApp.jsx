@@ -20,7 +20,7 @@ const TrendingApp = () => {
       <p className="text-gray-400">
         Explore All Trending Apps on the Market developed by us
       </p>
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 my-8">
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 my-8">
         {slicedData.map((data) => (
           <Cards key={data.id} data={data}></Cards>
         ))}

@@ -8,7 +8,7 @@ const Hero = () => {
     <div className="hero">
       <div className="hero-content pb-0 text-center flex flex-col justify-center">
         <div className="max-w-xl">
-          <h1 className="text-7xl font-bold">
+          <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold">
             We Build
             <br />
             <span className="bg-[linear-gradient(45deg,#632EE3,#9F62F2)] bg-clip-text text-transparent">
@@ -18,14 +18,14 @@ const Hero = () => {
           </h1>
         </div>
         <div className="max-w-5xl">
-          <p className="py-6 italic text-gray-600">
+          <p className="md:py-6 italic text-gray-600">
             At <span className="font-bold">HERO.IO</span>, we craft innovative
             apps designed to make everyday life simpler, smarter, and more
             exciting.Our goal is to turn your ideas into digital experiences
             that truly make an impact.
           </p>
-          <div className="flex gap-8 justify-center">
-            <button className="btn rounded-xl text-xl px-9 py-7">
+          <div className="flex gap-8 p-3 justify-center">
+            <button className="btn rounded-xl text-xl px-2 py-4 md:px-9 md:py-7">
               <a
                 href="https://play.google.com/store/"
                 target="_blank"
@@ -35,7 +35,7 @@ const Hero = () => {
                 <span>Google Play</span>{" "}
               </a>
             </button>
-            <button className="btn rounded-xl text-xl px-11 py-7">
+            <button className="btn rounded-xl text-xl md:px-9 md:py-7">
               <a
                 href="https://www.apple.com/app-store/"
                 target="_blank"
