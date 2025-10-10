@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import useData from "../../Hooks/useData";
 import ItemCard from "./ItemCard";
 import { toast } from "react-toastify";
+import { Link } from "react-router";
 
 const AppList = () => {
   const { datas, loading } = useData();
@@ -61,22 +62,35 @@ const AppList = () => {
         </div>
       </div>
       <div className="divider"></div>
-      {loading ? (
-        <div className="flex justify-center">
-          {" "}
-          <span className="loading loading-bars loading-xl"></span>
-        </div>
-      ) : (
-        <div>
-          {listItem.map((item) => (
-            <ItemCard
-              key={item.id}
-              item={item}
-              handleRemove={handleRemove}
-            ></ItemCard>
-          ))}
-        </div>
-      )}
+      <div>
+        {loading ? (
+          <div className="flex justify-center">
+            {" "}
+            <span className="loading loading-bars loading-xl"></span>
+          </div>
+        ) : (
+          <div>
+            {listItem.length < 1 ? (
+              <div className="flex flex-col justify-center text-center text-xl text-gray-500 font-semibold">
+                <h2 className="">No apps installed yet.</h2>
+                <button className="btn btn-primary mx-auto my-6">
+                  <Link to="/apps">Go Back</Link>
+                </button>
+              </div>
+            ) : (
+              <div>
+                {listItem.map((item) => (
+                  <ItemCard
+                    key={item.id}
+                    item={item}
+                    handleRemove={handleRemove}
+                  ></ItemCard>
+                ))}
+              </div>
+            )}
+          </div>
+        )}
+      </div>
     </div>
   );
 };
