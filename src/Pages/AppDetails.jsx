@@ -34,7 +34,7 @@ const AppDetails = () => {
   const { datas, loading } = useData();
 
   if (loading) {
-    return <h1>loading...</h1>;
+    return <span className="loading loading-bars loading-xl mx-auto"></span>;
   }
   const appData = datas.find((data) => data.id === Number(id));
 
