@@ -27,7 +27,7 @@ const DetailsCard = ({
         </p>
         <div className="divider "></div>
         <div className="flex gap-7">
-          <div className="flex justify-center items-center gap-3 md:gap-5">
+          <div className="flex justify-center items-baseline-last gap-3 md:gap-5">
             <div>
               <p className="text-gray-400">Downloads</p>
               <h1 className="text-sm md:text-4xl font-bold">
@@ -42,7 +42,7 @@ const DetailsCard = ({
               <img className="hidden md:block" src={iconDownloads} alt="" />
             </figure>
           </div>
-          <div className="flex justify-center items-center gap-5">
+          <div className="flex justify-center items-baseline-last gap-3 md:gap-5">
             <div>
               <p className="text-gray-400">Average Rating</p>
               <h1 className="text-sm md:text-4xl font-bold">{ratingAvg}</h1>
@@ -51,7 +51,7 @@ const DetailsCard = ({
               <img className="hidden md:block" src={iconRatings} alt="" />
             </figure>
           </div>
-          <div className="flex justify-center items-center gap-5">
+          <div className="flex justify-center items-baseline-last gap-5">
             <div>
               <p className="text-gray-400">Total Reviews</p>
               <h1 className="text-sm md:text-4xl font-bold">
