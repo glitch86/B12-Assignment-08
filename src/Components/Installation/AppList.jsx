@@ -4,7 +4,7 @@ import ItemCard from "./ItemCard";
 import { toast } from "react-toastify";
 
 const AppList = () => {
-  const { datas } = useData();
+  const { datas, loading } = useData();
   const [listItem, setListItem] = useState([]);
 
   useEffect(() => {
@@ -30,7 +30,7 @@ const AppList = () => {
   const handleSort = (op) => {
     let sorted = [];
     if (op === "Low-High") {
-       sorted = [...listItem].sort((a, b) => a.size - b.size);
+      sorted = [...listItem].sort((a, b) => a.size - b.size);
     } else if (op === "High-Low") {
       sorted = [...listItem].sort((a, b) => b.size - a.size);
     } else {
@@ -54,20 +54,29 @@ const AppList = () => {
             <li onClick={() => handleSort("Low-High")}>
               <a>Low-High</a>
             </li>
-            <li onClick={() => handleSort("High-Low")} >
+            <li onClick={() => handleSort("High-Low")}>
               <a>Hight-Low</a>
             </li>
           </ul>
         </div>
       </div>
       <div className="divider"></div>
-      {listItem.map((item) => (
-        <ItemCard
-          key={item.id}
-          item={item}
-          handleRemove={handleRemove}
-        ></ItemCard>
-      ))}
+      {loading ? (
+        <div className="flex justify-center">
+          {" "}
+          <span className="loading loading-bars loading-xl"></span>
+        </div>
+      ) : (
+        <div>
+          {listItem.map((item) => (
+            <ItemCard
+              key={item.id}
+              item={item}
+              handleRemove={handleRemove}
+            ></ItemCard>
+          ))}
+        </div>
+      )}
     </div>
   );
 };

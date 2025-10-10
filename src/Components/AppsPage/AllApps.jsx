@@ -4,7 +4,10 @@ import Cards from "../Trending/Cards";
 import NoApp from "../../Pages/NoApp";
 
 const AllApps = () => {
-  const { datas } = useData();
+  const { datas, loading } = useData();
+  // if (loading) {
+  //   return(<div className=""><span className="loading loading-bars loading-xl"></span></div>)
+  // }
   const [search, setSearch] = useState("");
   const keyWord = search.trim().toLocaleLowerCase();
 
@@ -30,14 +33,22 @@ const AllApps = () => {
           />
         </label>
       </div>
-      {searchRes.length > 0 ? (
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-3 lg:gap-4 my-8">
-          {searchRes.map((data) => (
-            <Cards key={data.id} data={data}></Cards>
-          ))}
+      {loading ? (
+        <div className="flex justify-center">
+          <span className="loading loading-bars loading-xl"></span>
         </div>
       ) : (
-        <NoApp setSearch={setSearch}></NoApp>
+        <div>
+          {searchRes.length > 0 ? (
+            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-3 lg:gap-4 my-8">
+              {searchRes.map((data) => (
+                <Cards key={data.id} data={data}></Cards>
+              ))}
+            </div>
+          ) : (
+            <NoApp setSearch={setSearch}></NoApp>
+          )}
+        </div>
       )}
     </div>
   );

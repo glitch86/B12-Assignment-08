@@ -5,8 +5,9 @@ import { Link } from "react-router";
 import { IoIosTrendingUp } from "react-icons/io";
 
 const TrendingApp = () => {
-  const { datas } = useData();
+  const { datas, loading } = useData();
   const slicedData = datas.slice(0, 8);
+
   return (
     <div className="text-center my-6">
       <div className="flex justify-center">
@@ -20,14 +21,24 @@ const TrendingApp = () => {
       <p className="text-gray-400">
         Explore All Trending Apps on the Market developed by us
       </p>
-      <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 my-8">
-        {slicedData.map((data) => (
-          <Cards key={data.id} data={data}></Cards>
-        ))}
-      </div>
-      <button className="btn btn-primary mx-auto ">
-        <Link to="/apps">Show all</Link>
-      </button>
+
+      {loading ? (
+        <div className="flex justify-center">
+          {" "}
+          <span className="loading loading-bars loading-xl"></span>
+        </div>
+      ) : (
+        <>
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 my-8">
+            {slicedData.map((data) => (
+              <Cards key={data.id} data={data}></Cards>
+            ))}
+          </div>
+          <button className="btn btn-primary mx-auto ">
+            <Link to="/apps">Show all</Link>
+          </button>
+        </>
+      )}
     </div>
   );
 };
